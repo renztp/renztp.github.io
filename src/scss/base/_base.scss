@@ -1,7 +1,25 @@
+@use "./mixins" as m;
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #333;
+  background: #141113;
+  color: #F8FFF4;
+  font-family: 'Inter', sans-serif, serif;
+}
+
+button {
+  background: #386150;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @include m.tablet {
+    max-width: 900px;
+  }
 }

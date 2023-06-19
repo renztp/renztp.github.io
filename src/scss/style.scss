@@ -1,8 +1,11 @@
 @charset "utf-8";
 
 @use "./base/normalize";
-@use "./base/mixins";
 @use "./base/base";
+
+// partials
+@use "./partials/header";
 
 // Layouts
 @use "./layouts/default";
+
