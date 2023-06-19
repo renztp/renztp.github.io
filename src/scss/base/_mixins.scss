@@ -1,0 +1,19 @@
+$screen-sizes: (
+  "xs": 320px,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+@mixin respond-to($screen) {
+  @if map-has-key($screen-sizes, $screen) {
+    @media (min-width: map-get($screen-sizes, $screen)) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Invalid screen size: #{$screen}.";
+  }
+}
