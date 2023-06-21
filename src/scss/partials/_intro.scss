@@ -1,0 +1,51 @@
+.intro {
+  padding: 40px 45px;
+  border: 2px solid #485245;
+  border-radius: 11px;
+  display: flex;
+  // align-items: center;
+  grid-gap: 1.5em;
+  .image {
+    img {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 194px;
+    }
+  }
+
+  &__button-group {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+  }
+
+  .content {
+    position: relative;
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    p {
+      width: 100%;
+      max-width: 366px;
+      font-size: 1.125rem;
+      line-height: 1.3em;
+      margin: 0 0 15px 0;
+    }
+
+    a.button {
+      background: #332323;
+      box-shadow: 4px 4px 0px #000000;
+      padding: 9px 11px;
+      text-decoration: none;
+      color: #fff;
+
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
